@@ -1,6 +1,7 @@
 package com.android.rvsample;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         fruitAdapter = new FruitAdapter(this, fruits);
         recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
         recyclerView.setAdapter(fruitAdapter);
 
     }
